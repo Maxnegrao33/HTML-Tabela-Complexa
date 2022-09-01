@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tabela Complexa</title>
+        </head>
+    <body>
+        <table>
+            <caption><h1>Produzidos e vendidos por lojas</h1> </caption>
+            <!--Melhorando a visualização das Colunas-->
+            
+              <!--Agrupador de Colunas-->
+            <colgroup>
+                <col>
+                <!--CHamando o CSS para o doc. HTML - CSS Inline-->
+                <col span="2" style="background-color: yellow">
+                <col span="2" style="background-color: salmon">
+                
+
+            </colgroup>
+        <thead>
+            <tr>
+                <!--rowspan - indica o nº de linhas a serem ocupadas-->
+                <!--colspan - indica o nº de colunas a serem ocupadas-->
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Centro</th>
+                <th colspan="2" scope="colgroup">Solo Sagrado</th>
+            </tr> 
+            
+            <tr>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+            </tr>
+        </thead> 
+        
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+            </tr>
+            
+            <tr>
+                <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+            </tr>
+
+                </tbody>
+            
+        </table>
+    </body>
+</html>
